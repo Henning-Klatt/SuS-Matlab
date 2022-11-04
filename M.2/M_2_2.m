@@ -7,7 +7,6 @@ y = signal(k);
 stem(k, y);
 
 % Erezugt Signal für Projektaufgabe 2.2
-
 function [y] = signal(k)
 
 y = zeros(size(k));
