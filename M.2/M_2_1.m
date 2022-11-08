@@ -1,5 +1,10 @@
 % M.2.1 Visualisierung Diskreter Signale
 
+% Aufgabe 2.1
+
+% Initialisierung
+close; clear; clc;
+
 k = -20:1:40;
 
 % Delta-Folge

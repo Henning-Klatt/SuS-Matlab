@@ -1,4 +1,9 @@
-% M.2.3 Verschiebung und Spiegelung
+% M.2.2 Verschiebung und Spiegelung
+
+% Aufgabe 2.3
+
+% Initialisierung
+close; clear; clc;
 
 k = -20:1:40;
 
@@ -22,8 +27,10 @@ y = signal(4-k);
 figure('Name','x[4-k]', 'NumberTitle','off');
 stem(k, y);
 
+% da linear, ist die Reihenfolge egal
+
 % Erezugt Signal für Projektaufgabe 2.3
-function [y] = signal(k)
+function y = signal(k)
 
 y = zeros(size(k));
 y(k > 0) = 1./k(k > 0);
