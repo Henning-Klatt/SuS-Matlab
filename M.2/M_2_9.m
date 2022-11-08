@@ -10,10 +10,14 @@ c = [-1 -1];
 x = [1];
 n = 10;
 
-y = IIRsys(b, c, x, n)
+y1 = IIRsys(b, c, x, n);
+
+y2 = IIRsys([1 0 0], [0.9 0.81 1], ones(1,1), 100);
 
 figure(1);
-stem(y);
+hold("on");
+stem(y1);
+stem(y2);
 
 function y = IIRsys(b, c, x, n)
     kx = length(x);
